@@ -238,6 +238,46 @@ readiness," not "done."
 
 ---
 
+## Generated task index
+
+Every milestone-table row (M0–M6) and every Backlog/future row now has an executable
+`tasks/<id>.json` validated against `packages/schema/src/schemas.ts` (28 files total). The Elyos
+CLI executes these JSON files, not this Markdown. Acceptance criteria mirror the "Acceptance
+criteria — key tasks" bullets above; rows that lacked explicit criteria (glossary-005 and the
+Backlog/future rows) received criteria derived from their title, deliverable, and the binding
+guardrails. All tasks carry `status: open`, `lane: donated`, `verifiedNeed: false`, and
+`requestor: TO BE SECURED` per the cold-start policy; HIGH-tier tasks restate their
+blocked-until-reviewers-secured framing in `context`/`acceptanceCriteria`.
+
+**Fan-out:** none — `TASKS.md` already enumerates each task as a concrete row, and no row defines
+a bounded fan-out dimension (no named language/dataset/document set), so each row maps 1:1 to a
+single task JSON. No languages, datasets, documents, or beneficiaries were fabricated.
+Internationalization/translation work (i18n-072) remains a single governance-annex task; concrete
+education translations expand only on the PLAN §16 Q7 decision and once HIGH-tier reviewers are
+secured.
+
+Generated ids:
+
+- M0: `ewing-registry-standards-repo-001` (seed), `ewing-registry-standards-compliance-002`,
+  `ewing-registry-standards-landscape-003`, `ewing-registry-standards-partner-004`,
+  `ewing-registry-standards-glossary-005`
+- M1: `ewing-registry-standards-model-010`, `ewing-registry-standards-modules-011`
+- M2: `ewing-registry-standards-cde-020`, `ewing-registry-standards-terminology-021`,
+  `ewing-registry-standards-molecular-022`, `ewing-registry-standards-crosswalk-023`
+- M3 (HIGH, blocked on reviewers): `ewing-registry-standards-consent-030`,
+  `ewing-registry-standards-deid-031`, `ewing-registry-standards-governance-032`
+- M4: `ewing-registry-standards-fhir-040`, `ewing-registry-standards-omop-041`,
+  `ewing-registry-standards-redcap-042`
+- M5: `ewing-registry-standards-jsonschema-050`, `ewing-registry-standards-validator-051`,
+  `ewing-registry-standards-fixtures-052`
+- M6: `ewing-registry-standards-education-060` (HIGH, blocked on reviewers),
+  `ewing-registry-standards-adoption-061`, `ewing-registry-standards-versioning-062`
+- Backlog/future: `ewing-registry-standards-cdisc-070`, `ewing-registry-standards-pro-071`,
+  `ewing-registry-standards-i18n-072` (HIGH), `ewing-registry-standards-rare-core-073`,
+  `ewing-registry-standards-beacon-074`
+
+---
+
 ## Example task JSON
 
 A complete, schema-valid Task JSON for the first M0 task (validated against

@@ -1,0 +1,38 @@
+{
+  "id": "ewing-registry-standards-partner-004",
+  "title": "Partner & expert-reviewer recruitment plan + scored candidate list (gates HIGH milestones + O1)",
+  "project": "ewing-registry-standards",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "cancer",
+    "rare-disease",
+    "data-standards",
+    "health-informatics",
+    "partnerships",
+    "governance"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Ewing Registry Standards produces an OPEN, CONSENT-FIRST registry STANDARD (common data elements, governance, interoperability profiles) for Ewing Sarcoma. It is NOT a data store and Elyos never holds patient data. No partner registry or expert reviewers are secured; this recruitment plan is the named gate for the HIGH-tier milestones (M3, M6) and the partner-pilot outcome (O1). Binding guardrails apply: open/aggregate/de-identified only, NO real patient data anywhere (fixtures synthetic), per-source license verification (bind terminologies by reference, never redistribute), no medical advice, and provenance on every assertion. No partner or expert reviewers are secured yet, so verifiedNeed is false and requestor is TO BE SECURED.",
+  "objective": "Deliver a partner + expert-reviewer recruitment plan with a scored candidate list covering each HIGH-tier reviewer role.",
+  "acceptanceCriteria": [
+    "At least 3 candidate partners and at least 1 candidate per HIGH-tier reviewer role (oncologist, advocate, ethics) identified with contact approach",
+    "Explicit statement that verifiedNeed stays false until a partner confirms",
+    "Recruitment is named the gate for M3/M6"
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "planning/projects/ewing-registry-standards/PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "research/partner-recruitment-plan.md",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

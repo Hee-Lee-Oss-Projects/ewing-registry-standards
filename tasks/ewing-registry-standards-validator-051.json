@@ -1,0 +1,37 @@
+{
+  "id": "ewing-registry-standards-validator-051",
+  "title": "Validator CLI + provenance-lint + license-audit + crosswalk-completeness checks",
+  "project": "ewing-registry-standards",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "cancer",
+    "rare-disease",
+    "data-standards",
+    "health-informatics",
+    "software",
+    "tooling"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Ewing Registry Standards produces an OPEN, CONSENT-FIRST registry STANDARD (common data elements, governance, interoperability profiles) for Ewing Sarcoma. It is NOT a data store and Elyos never holds patient data. The validator CLI checks a record against the schema and runs provenance-lint, license-audit, and crosswalk-completeness as commands and in CI (depends on jsonschema-050). Binding guardrails apply: open/aggregate/de-identified only, NO real patient data anywhere (fixtures synthetic), per-source license verification (bind terminologies by reference, never redistribute), no medical advice, and provenance on every assertion. No partner or expert reviewers are secured yet, so verifiedNeed is false and requestor is TO BE SECURED.",
+  "objective": "Build a validator CLI that validates records against the schema and runs provenance-lint, license-audit, and crosswalk-completeness checks.",
+  "acceptanceCriteria": [
+    "CLI validates a record against the schema and reports pass/fail with reasons",
+    "provenance-lint, license-audit, and crosswalk-completeness run as commands and in CI"
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "planning/projects/ewing-registry-standards/PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "tooling/validator/ (validator CLI)",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}
