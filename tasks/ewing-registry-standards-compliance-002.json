@@ -1,0 +1,40 @@
+{
+  "id": "ewing-registry-standards-compliance-002",
+  "title": "Data/licensing & compliance guardrail policy + license-register skeleton + CI license-audit + provenance-lint",
+  "project": "ewing-registry-standards",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "cancer",
+    "rare-disease",
+    "data-standards",
+    "health-informatics",
+    "governance",
+    "licensing",
+    "compliance"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Ewing Registry Standards produces an OPEN, CONSENT-FIRST registry STANDARD (common data elements, governance, interoperability profiles) for Ewing Sarcoma. It is NOT a data store and Elyos never holds patient data. This task encodes the project's binding guardrails as an enforceable compliance policy and the license-register + CI gates every later artifact depends on (depends on repo-001). Binding guardrails apply: open/aggregate/de-identified only, NO real patient data anywhere (fixtures synthetic), per-source license verification (bind terminologies by reference, never redistribute), no medical advice, and provenance on every assertion. No partner or expert reviewers are secured yet, so verifiedNeed is false and requestor is TO BE SECURED.",
+  "objective": "Author the data/licensing/compliance guardrail policy, a license-register skeleton, and CI license-audit + provenance-lint jobs that fail on a seeded violation.",
+  "acceptanceCriteria": [
+    "Policy states the binding guardrails verbatim (open/aggregate/de-identified only; no real patient data; bind-by-reference; no medical advice; provenance on every assertion)",
+    "License-register template has a row schema (source/use/license/handling-rule/boundByReference)",
+    "CI `license-audit` and `provenance-lint` jobs exist and fail on a seeded violation",
+    "'No real data / synthetic-only' rule documented and a CI synthetic-check stub added"
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "planning/projects/ewing-registry-standards/PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "governance/data-compliance-policy.md plus tooling/license-register schema and CI license-audit + provenance-lint jobs",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

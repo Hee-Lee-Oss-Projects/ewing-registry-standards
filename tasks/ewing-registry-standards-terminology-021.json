@@ -1,0 +1,39 @@
+{
+  "id": "ewing-registry-standards-terminology-021",
+  "title": "Terminology bindings + per-system license register (bind by reference)",
+  "project": "ewing-registry-standards",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "cancer",
+    "rare-disease",
+    "data-standards",
+    "health-informatics",
+    "terminology",
+    "licensing"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Ewing Registry Standards produces an OPEN, CONSENT-FIRST registry STANDARD (common data elements, governance, interoperability profiles) for Ewing Sarcoma. It is NOT a data store and Elyos never holds patient data. Terminology bindings record system+version+code by reference and a per-system license register documents adopter obligations, never redistributing terminology content (depends on cde-020). Binding guardrails apply: open/aggregate/de-identified only, NO real patient data anywhere (fixtures synthetic), per-source license verification (bind terminologies by reference, never redistribute), no medical advice, and provenance on every assertion. No partner or expert reviewers are secured yet, so verifiedNeed is false and requestor is TO BE SECURED.",
+  "objective": "Produce terminology bindings (by reference) and a per-system license register covering all bound vocabularies.",
+  "acceptanceCriteria": [
+    "Every binding records system + version + code (by reference)",
+    "License register complete for SNOMED CT (affiliate), LOINC (notice), ICD-O-3/WHO, AJCC (reference-only), NCIt, HGNC",
+    "license-audit green",
+    "SNOMED/PRO-instrument adopter obligations documented"
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "planning/projects/ewing-registry-standards/PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "terminology/bindings.json plus terminology/license-register.md",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

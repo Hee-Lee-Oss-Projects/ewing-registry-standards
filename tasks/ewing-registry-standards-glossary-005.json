@@ -1,0 +1,37 @@
+{
+  "id": "ewing-registry-standards-glossary-005",
+  "title": "Project glossary + provenance/citation conventions",
+  "project": "ewing-registry-standards",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "cancer",
+    "rare-disease",
+    "data-standards",
+    "health-informatics",
+    "documentation"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Ewing Registry Standards produces an OPEN, CONSENT-FIRST registry STANDARD (common data elements, governance, interoperability profiles) for Ewing Sarcoma. It is NOT a data store and Elyos never holds patient data. A shared glossary and provenance/citation convention keeps every later artifact consistent and enforces 'provenance on every assertion' (depends on repo-001). Binding guardrails apply: open/aggregate/de-identified only, NO real patient data anywhere (fixtures synthetic), per-source license verification (bind terminologies by reference, never redistribute), no medical advice, and provenance on every assertion. No partner or expert reviewers are secured yet, so verifiedNeed is false and requestor is TO BE SECURED.",
+  "objective": "Write the project glossary plus the provenance/citation conventions used by all artifacts.",
+  "acceptanceCriteria": [
+    "Glossary defines the project's key clinical, standards, and governance terms with sources",
+    "Provenance/citation convention specifies the required block (source/url/accessedDate/version/license)",
+    "Conventions are referenced by the compliance policy and provenance-lint"
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "planning/projects/ewing-registry-standards/PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "GLOSSARY.md plus docs/provenance-conventions.md",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

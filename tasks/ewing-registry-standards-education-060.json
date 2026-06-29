@@ -1,0 +1,41 @@
+{
+  "id": "ewing-registry-standards-education-060",
+  "title": "Plain-language family-facing education (what a registry collects & why; your consent rights)",
+  "project": "ewing-registry-standards",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "cancer",
+    "rare-disease",
+    "data-standards",
+    "health-informatics",
+    "patient-education",
+    "ethics"
+  ],
+  "riskTier": "high",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Ewing Registry Standards produces an OPEN, CONSENT-FIRST registry STANDARD (common data elements, governance, interoperability profiles) for Ewing Sarcoma. It is NOT a data store and Elyos never holds patient data. HIGH-tier task: plain-language, family-facing education about what a registry collects and a family's consent rights. It contains NO prognosis or treatment guidance, must carry 'This is not medical advice', and is BLOCKED until an oncologist + patient advocate are secured and sign off (depends on consent-030, deid-031). Binding guardrails apply: open/aggregate/de-identified only, NO real patient data anywhere (fixtures synthetic), per-source license verification (bind terminologies by reference, never redistribute), no medical advice, and provenance on every assertion. No partner or expert reviewers are secured yet, so verifiedNeed is false and requestor is TO BE SECURED.",
+  "objective": "Write plain-language family-facing education on what a registry collects and consent rights, sourced and explicitly not medical advice.",
+  "acceptanceCriteria": [
+    "Every claim sourced to an authoritative source (NCI/COG/SIOPE/peer-reviewed)",
+    "Contains 'This is not medical advice'",
+    "Readability <= grade 8",
+    "Reviewed and signed off by an oncologist + a patient advocate",
+    "No prognosis/treatment guidance",
+    "BLOCKED until reviewers (oncologist + advocate) secured"
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "planning/projects/ewing-registry-standards/PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "education/family-guide.md",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
