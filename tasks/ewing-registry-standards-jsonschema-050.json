@@ -18,7 +18,7 @@
   "deliverable": "pr",
   "tokenEstimate": "medium",
   "status": "open",
-  "context": "Ewing Registry Standards produces an OPEN, CONSENT-FIRST registry STANDARD (common data elements, governance, interoperability profiles) for Ewing Sarcoma. It is NOT a data store and Elyos never holds patient data. A generated JSON Schema (draft 2020-12) for the CDE set + provenance validates synthetic fixtures and is kept in sync with the CDE source via a CI drift-check (depends on cde-020). Binding guardrails apply: open/aggregate/de-identified only, NO real patient data anywhere (fixtures synthetic), per-source license verification (bind terminologies by reference, never redistribute), no medical advice, and provenance on every assertion. No partner or expert reviewers are secured yet, so verifiedNeed is false and requestor is TO BE SECURED.",
+  "context": "Ewing Registry Standards produces an OPEN, CONSENT-FIRST registry STANDARD (common data elements, governance, interoperability profiles) for Ewing Sarcoma. It is NOT a data store and Hee-Lee Oss never holds patient data. A generated JSON Schema (draft 2020-12) for the CDE set + provenance validates synthetic fixtures and is kept in sync with the CDE source via a CI drift-check (depends on cde-020). Binding guardrails apply: open/aggregate/de-identified only, NO real patient data anywhere (fixtures synthetic), per-source license verification (bind terminologies by reference, never redistribute), no medical advice, and provenance on every assertion. No partner or expert reviewers are secured yet, so verifiedNeed is false and requestor is TO BE SECURED.",
   "objective": "Generate a draft 2020-12 JSON Schema for the CDE set + provenance from the source of truth, with a CI drift-check.",
   "acceptanceCriteria": [
     "Schema generated (not hand-maintained) from the CDE source",
@@ -26,8 +26,8 @@
     "CI drift-check ensures schema matches source"
   ],
   "resources": [
-    "C:/code/elyos/CLAUDE.md",
-    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "C:/code/hee-lee-oss/CLAUDE.md",
+    "C:/code/hee-lee-oss/packages/schema/src/schemas.ts",
     "planning/projects/ewing-registry-standards/PLAN.md",
     "TASKS.md"
   ],

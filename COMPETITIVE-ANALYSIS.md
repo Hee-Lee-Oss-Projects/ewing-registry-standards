@@ -2,7 +2,7 @@
 
 **Project under review:** An open, consent-first **natural-history registry STANDARD** (Common Data
 Elements + terminology bindings + consent/governance framework + interoperability profiles) for
-Ewing Sarcoma. **Not** a data store; Elyos holds no patient data. Deliverables tell a separately
+Ewing Sarcoma. **Not** a data store; Hee-Lee Oss holds no patient data. Deliverables tell a separately
 governed registry operator *how* to collect Ewing natural-history data lawfully, interoperably, and
 ethically.
 
@@ -263,7 +263,7 @@ The space is "generic rare-disease MDS (EU CDE/ERDRI/RD-CDM)" + "generic oncolog
    register as MCP tools so any agent/EHR-integration can query "what's the mCODE/OMOP/Phenopacket
    mapping for Ewing tumor stage?" — a low-cost, high-visibility adoption accelerant.
 6. **Generalized "registry-standard linter" (parallel).** The provenance-lint + license-audit +
-   crosswalk-completeness + synthetic-check tooling is reusable across the whole Elyos cancer track —
+   crosswalk-completeness + synthetic-check tooling is reusable across the whole Hee-Lee Oss cancer track —
    ship it as a standalone package.
 7. **`ewing-survivorship-late-effects` CDE module (perpendicular).** The genuinely net-new clinical
    contribution; could stand alone and be adopted even by registries not taking the full standard.

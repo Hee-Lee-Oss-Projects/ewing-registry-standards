@@ -18,7 +18,7 @@
   "deliverable": "document",
   "tokenEstimate": "medium",
   "status": "open",
-  "context": "Ewing Registry Standards produces an OPEN, CONSENT-FIRST registry STANDARD (common data elements, governance, interoperability profiles) for Ewing Sarcoma. It is NOT a data store and Elyos never holds patient data. The OMOP CDM (+Oncology) mapping specification lets adopters represent the CDE set in OHDSI-conformant form (depends on cde-020, terminology-021). Binding guardrails apply: open/aggregate/de-identified only, NO real patient data anywhere (fixtures synthetic), per-source license verification (bind terminologies by reference, never redistribute), no medical advice, and provenance on every assertion. No partner or expert reviewers are secured yet, so verifiedNeed is false and requestor is TO BE SECURED.",
+  "context": "Ewing Registry Standards produces an OPEN, CONSENT-FIRST registry STANDARD (common data elements, governance, interoperability profiles) for Ewing Sarcoma. It is NOT a data store and Hee-Lee Oss never holds patient data. The OMOP CDM (+Oncology) mapping specification lets adopters represent the CDE set in OHDSI-conformant form (depends on cde-020, terminology-021). Binding guardrails apply: open/aggregate/de-identified only, NO real patient data anywhere (fixtures synthetic), per-source license verification (bind terminologies by reference, never redistribute), no medical advice, and provenance on every assertion. No partner or expert reviewers are secured yet, so verifiedNeed is false and requestor is TO BE SECURED.",
   "objective": "Author the OMOP CDM (+Oncology) mapping specification passing OHDSI convention checks with documented core-CDE coverage.",
   "acceptanceCriteria": [
     "Mapping passes OHDSI convention checks",
@@ -26,8 +26,8 @@
     ">=90% core-CDE coverage documented"
   ],
   "resources": [
-    "C:/code/elyos/CLAUDE.md",
-    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "C:/code/hee-lee-oss/CLAUDE.md",
+    "C:/code/hee-lee-oss/packages/schema/src/schemas.ts",
     "planning/projects/ewing-registry-standards/PLAN.md",
     "TASKS.md"
   ],

@@ -19,7 +19,7 @@
   "deliverable": "document",
   "tokenEstimate": "medium",
   "status": "open",
-  "context": "Ewing Registry Standards produces an OPEN, CONSENT-FIRST registry STANDARD (common data elements, governance, interoperability profiles) for Ewing Sarcoma. It is NOT a data store and Elyos never holds patient data. HIGH-tier task: tiered data-use governance binds GA4GH DUO codes and defines an access model aligned to consent options. BLOCKED until ethics reviewer + domain reviewer are secured (partner-004); HIGH sign-off required. Binding guardrails apply: open/aggregate/de-identified only, NO real patient data anywhere (fixtures synthetic), per-source license verification (bind terminologies by reference, never redistribute), no medical advice, and provenance on every assertion. No partner or expert reviewers are secured yet, so verifiedNeed is false and requestor is TO BE SECURED.",
+  "context": "Ewing Registry Standards produces an OPEN, CONSENT-FIRST registry STANDARD (common data elements, governance, interoperability profiles) for Ewing Sarcoma. It is NOT a data store and Hee-Lee Oss never holds patient data. HIGH-tier task: tiered data-use governance binds GA4GH DUO codes and defines an access model aligned to consent options. BLOCKED until ethics reviewer + domain reviewer are secured (partner-004); HIGH sign-off required. Binding guardrails apply: open/aggregate/de-identified only, NO real patient data anywhere (fixtures synthetic), per-source license verification (bind terminologies by reference, never redistribute), no medical advice, and provenance on every assertion. No partner or expert reviewers are secured yet, so verifiedNeed is false and requestor is TO BE SECURED.",
   "objective": "Define tiered data-use governance with validated GA4GH DUO bindings and an access model aligned to consent.",
   "acceptanceCriteria": [
     "Access tiers defined",
@@ -28,8 +28,8 @@
     "BLOCKED until the ethics reviewer + domain reviewer are secured (partner-004)"
   ],
   "resources": [
-    "C:/code/elyos/CLAUDE.md",
-    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "C:/code/hee-lee-oss/CLAUDE.md",
+    "C:/code/hee-lee-oss/packages/schema/src/schemas.ts",
     "planning/projects/ewing-registry-standards/PLAN.md",
     "TASKS.md"
   ],

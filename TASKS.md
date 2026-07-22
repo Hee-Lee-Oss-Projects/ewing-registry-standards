@@ -5,7 +5,7 @@
 
 Backlog for **Ewing Registry Standards** — an open, consent-first **natural-history registry
 *standard*** (CDEs, governance, interoperability profiles) for Ewing Sarcoma. **This project
-produces a standard, not a data store; Elyos never holds patient data.**
+produces a standard, not a data store; Hee-Lee Oss never holds patient data.**
 
 **Binding guardrails (every task inherits these):** open-access / aggregate / de-identified only;
 **no real patient data anywhere** (fixtures are synthetic); per-source license verification
@@ -17,9 +17,9 @@ assertion**. See `PLAN.md` §7.
 **every task carries `verifiedNeed: false`** and `requestor: TO BE SECURED`. HIGH-tier tasks
 (consent/governance, family education) are **blocked** until the named reviewers are secured.
 
-## How these tasks map to Elyos
+## How these tasks map to Hee-Lee Oss
 
-Each task becomes an Elyos **Task JSON** validated against `packages/schema/src/schemas.ts`.
+Each task becomes a Hee-Lee Oss **Task JSON** validated against `packages/schema/src/schemas.ts`.
 Field mapping:
 
 - **id** — stable slug `ewing-registry-standards-<area>-NNN`.
@@ -241,7 +241,7 @@ readiness," not "done."
 ## Generated task index
 
 Every milestone-table row (M0–M6) and every Backlog/future row now has an executable
-`tasks/<id>.json` validated against `packages/schema/src/schemas.ts` (28 files total). The Elyos
+`tasks/<id>.json` validated against `packages/schema/src/schemas.ts` (28 files total). The Hee-Lee Oss
 CLI executes these JSON files, not this Markdown. Acceptance criteria mirror the "Acceptance
 criteria — key tasks" bullets above; rows that lacked explicit criteria (glossary-005 and the
 Backlog/future rows) received criteria derived from their title, deliverable, and the binding
@@ -297,7 +297,7 @@ A complete, schema-valid Task JSON for the first M0 task (validated against
   "deliverable": "pr",
   "tokenEstimate": "small",
   "status": "open",
-  "context": "Ewing Registry Standards produces an OPEN, CONSENT-FIRST registry STANDARD (common data elements, governance, interoperability profiles) for Ewing Sarcoma. It is NOT a data store and Elyos never holds patient data. This task establishes the repository skeleton and CI that all later artifacts depend on. Binding guardrails apply to the whole repo: open/aggregate/de-identified only, no real patient data anywhere (fixtures must be synthetic), per-source license verification (bind terminologies by reference, never redistribute), and provenance on every assertion. No partner or expert reviewers are secured yet, so verifiedNeed is false.",
+  "context": "Ewing Registry Standards produces an OPEN, CONSENT-FIRST registry STANDARD (common data elements, governance, interoperability profiles) for Ewing Sarcoma. It is NOT a data store and Hee-Lee Oss never holds patient data. This task establishes the repository skeleton and CI that all later artifacts depend on. Binding guardrails apply to the whole repo: open/aggregate/de-identified only, no real patient data anywhere (fixtures must be synthetic), per-source license verification (bind terminologies by reference, never redistribute), and provenance on every assertion. No partner or expert reviewers are secured yet, so verifiedNeed is false.",
   "objective": "Stand up a pnpm + TypeScript + ESM monorepo with passing CI (build, test, lint) and the directory layout (model/, cde/, terminology/, governance/, profiles/, schema/, tooling/, examples/, education/), plus the licensing/citation scaffolding, so subsequent standards work has a clean, guardrail-aware foundation.",
   "acceptanceCriteria": [
     "pnpm workspace builds and `pnpm build && pnpm test && pnpm lint` pass green in CI",
@@ -308,9 +308,9 @@ A complete, schema-valid Task JSON for the first M0 task (validated against
     "README states the binding cancer guardrails and the 'standard, not a data store' scope"
   ],
   "resources": [
-    "C:/code/elyos/CLAUDE.md",
-    "C:/code/elyos/docs/good-deed-definition.md",
-    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "C:/code/hee-lee-oss/CLAUDE.md",
+    "C:/code/hee-lee-oss/docs/good-deed-definition.md",
+    "C:/code/hee-lee-oss/packages/schema/src/schemas.ts",
     "planning/projects/ewing-registry-standards/PLAN.md"
   ],
   "output": "A pull request adding the monorepo skeleton, CI workflow (build/test/lint + placeholder guardrail jobs), directory layout, and licensing/citation scaffolding for the Ewing Registry Standards project.",

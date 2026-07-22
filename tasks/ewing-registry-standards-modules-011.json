@@ -18,7 +18,7 @@
   "deliverable": "document",
   "tokenEstimate": "small",
   "status": "open",
-  "context": "Ewing Registry Standards produces an OPEN, CONSENT-FIRST registry STANDARD (common data elements, governance, interoperability profiles) for Ewing Sarcoma. It is NOT a data store and Elyos never holds patient data. The module map splits the standard into a minimal-viable core vs extended modules and traces each to an existing standard, scoping the CDE milestone (depends on model-010). Binding guardrails apply: open/aggregate/de-identified only, NO real patient data anywhere (fixtures synthetic), per-source license verification (bind terminologies by reference, never redistribute), no medical advice, and provenance on every assertion. No partner or expert reviewers are secured yet, so verifiedNeed is false and requestor is TO BE SECURED.",
+  "context": "Ewing Registry Standards produces an OPEN, CONSENT-FIRST registry STANDARD (common data elements, governance, interoperability profiles) for Ewing Sarcoma. It is NOT a data store and Hee-Lee Oss never holds patient data. The module map splits the standard into a minimal-viable core vs extended modules and traces each to an existing standard, scoping the CDE milestone (depends on model-010). Binding guardrails apply: open/aggregate/de-identified only, NO real patient data anywhere (fixtures synthetic), per-source license verification (bind terminologies by reference, never redistribute), no medical advice, and provenance on every assertion. No partner or expert reviewers are secured yet, so verifiedNeed is false and requestor is TO BE SECURED.",
   "objective": "Produce a core-vs-extended module map with each module crosswalked to an existing standard or justified as net-new.",
   "acceptanceCriteria": [
     "Clear core (minimal viable) vs extended split",
@@ -26,8 +26,8 @@
     "Gaps explicitly listed"
   ],
   "resources": [
-    "C:/code/elyos/CLAUDE.md",
-    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "C:/code/hee-lee-oss/CLAUDE.md",
+    "C:/code/hee-lee-oss/packages/schema/src/schemas.ts",
     "planning/projects/ewing-registry-standards/PLAN.md",
     "TASKS.md"
   ],

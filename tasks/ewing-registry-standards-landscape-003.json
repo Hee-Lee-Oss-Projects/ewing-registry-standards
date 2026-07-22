@@ -18,7 +18,7 @@
   "deliverable": "document",
   "tokenEstimate": "medium",
   "status": "open",
-  "context": "Ewing Registry Standards produces an OPEN, CONSENT-FIRST registry STANDARD (common data elements, governance, interoperability profiles) for Ewing Sarcoma. It is NOT a data store and Elyos never holds patient data. This landscape scan establishes what an open Ewing registry standard must reuse vs add, with each existing standard's license posture, to steer the conceptual model and CDE work. Binding guardrails apply: open/aggregate/de-identified only, NO real patient data anywhere (fixtures synthetic), per-source license verification (bind terminologies by reference, never redistribute), no medical advice, and provenance on every assertion. No partner or expert reviewers are secured yet, so verifiedNeed is false and requestor is TO BE SECURED.",
+  "context": "Ewing Registry Standards produces an OPEN, CONSENT-FIRST registry STANDARD (common data elements, governance, interoperability profiles) for Ewing Sarcoma. It is NOT a data store and Hee-Lee Oss never holds patient data. This landscape scan establishes what an open Ewing registry standard must reuse vs add, with each existing standard's license posture, to steer the conceptual model and CDE work. Binding guardrails apply: open/aggregate/de-identified only, NO real patient data anywhere (fixtures synthetic), per-source license verification (bind terminologies by reference, never redistribute), no medical advice, and provenance on every assertion. No partner or expert reviewers are secured yet, so verifiedNeed is false and requestor is TO BE SECURED.",
   "objective": "Produce a cited landscape scan of existing CDEs/standards with a gap analysis and a reuse-vs-net-new recommendation.",
   "acceptanceCriteria": [
     "Every existing standard reviewed with its license posture",
@@ -27,8 +27,8 @@
     "Cited throughout (provenance on every assertion)"
   ],
   "resources": [
-    "C:/code/elyos/CLAUDE.md",
-    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "C:/code/hee-lee-oss/CLAUDE.md",
+    "C:/code/hee-lee-oss/packages/schema/src/schemas.ts",
     "planning/projects/ewing-registry-standards/PLAN.md",
     "TASKS.md"
   ],

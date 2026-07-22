@@ -18,7 +18,7 @@
   "deliverable": "dataset",
   "tokenEstimate": "medium",
   "status": "open",
-  "context": "Ewing Registry Standards produces an OPEN, CONSENT-FIRST registry STANDARD (common data elements, governance, interoperability profiles) for Ewing Sarcoma. It is NOT a data store and Elyos never holds patient data. The crosswalk maps every core CDE to GRDR/caDSR/mCODE/ICHOM with provenance, meeting outcome O2 and guarding against orphan elements (depends on cde-020, terminology-021). Binding guardrails apply: open/aggregate/de-identified only, NO real patient data anywhere (fixtures synthetic), per-source license verification (bind terminologies by reference, never redistribute), no medical advice, and provenance on every assertion. No partner or expert reviewers are secured yet, so verifiedNeed is false and requestor is TO BE SECURED.",
+  "context": "Ewing Registry Standards produces an OPEN, CONSENT-FIRST registry STANDARD (common data elements, governance, interoperability profiles) for Ewing Sarcoma. It is NOT a data store and Hee-Lee Oss never holds patient data. The crosswalk maps every core CDE to GRDR/caDSR/mCODE/ICHOM with provenance, meeting outcome O2 and guarding against orphan elements (depends on cde-020, terminology-021). Binding guardrails apply: open/aggregate/de-identified only, NO real patient data anywhere (fixtures synthetic), per-source license verification (bind terminologies by reference, never redistribute), no medical advice, and provenance on every assertion. No partner or expert reviewers are secured yet, so verifiedNeed is false and requestor is TO BE SECURED.",
   "objective": "Produce a complete crosswalk of all core CDEs to GRDR/caDSR/mCODE/ICHOM with provenance and a CI completeness check.",
   "acceptanceCriteria": [
     "O2 met - 100% of core CDEs carry >=1 crosswalk + provenance",
@@ -26,8 +26,8 @@
     "CI crosswalk-completeness check green"
   ],
   "resources": [
-    "C:/code/elyos/CLAUDE.md",
-    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "C:/code/hee-lee-oss/CLAUDE.md",
+    "C:/code/hee-lee-oss/packages/schema/src/schemas.ts",
     "planning/projects/ewing-registry-standards/PLAN.md",
     "TASKS.md"
   ],

@@ -6,7 +6,7 @@
 
 > ### ⛔ BINDING GUARDRAILS — read before any work on this project
 > This project produces an **open data *standard* (schema, common data elements, governance,
-> interoperability profiles) — NOT a data store.** Elyos **never holds, ingests, hosts, or
+> interoperability profiles) — NOT a data store.** Hee-Lee Oss **never holds, ingests, hosts, or
 > processes any patient record** under this project. The deliverables describe how a *separate,
 > appropriately-governed registry operator* could collect Ewing Sarcoma natural-history data
 > lawfully and ethically.
@@ -80,8 +80,8 @@ partner and real reviewers. Securing one partner registry + one oncologist + one
 is **M0's top non-engineering exit criterion.**
 
 **Why a standard (not a database):** building another siloed database would *add* fragmentation
-and pull Elyos into holding sensitive data — squarely against our guardrails. A standard is the
-high-leverage, low-risk intervention: it benefits every registry without Elyos ever touching a
+and pull Hee-Lee Oss into holding sensitive data — squarely against our guardrails. A standard is the
+high-leverage, low-risk intervention: it benefits every registry without Hee-Lee Oss ever touching a
 patient record.
 
 ## 3. Goals and non-goals
@@ -109,7 +109,7 @@ patient record.
 - **Not** giving medical advice or treatment recommendations to anyone.
 - **Not** mandating a single technology — we provide profiles for multiple platforms.
 - **Not** a clinical trial protocol, an eligibility engine, or a trial finder (those are sibling
-  Elyos projects: `ewing-trial-finder`, `ewing-eligibility-structuring`).
+  Hee-Lee Oss projects: `ewing-trial-finder`, `ewing-eligibility-structuring`).
 
 ## 4. Success metrics (outcomes)
 
@@ -194,7 +194,7 @@ touches data.**
 - **OHDSI OMOP CDM** mapping (with the OMOP Oncology extension) validated against OHDSI conventions.
 - **CDISC** (CDASH/SDTM, Rare Disease therapeutic-area concepts) mapping notes.
 - **REDCap** data-dictionary CSV template (the dominant registry capture tool).
-- CI: build + test + lint + all validators must pass (matches Elyos `pnpm build && test && lint`).
+- CI: build + test + lint + all validators must pass (matches Hee-Lee Oss `pnpm build && test && lint`).
 
 **6.4 Key decisions**
 - **Single machine-readable source of truth** for CDEs; everything else generated. (Avoids the #1
@@ -213,7 +213,7 @@ touches data.**
 
 **7.1 What data this project handles.** **None that is patient-level.** We handle *standards
 artifacts and aggregate/open references only.* We never collect, store, ingest, or transmit
-patient data. The standard *describes* fields a registry may collect; Elyos never holds them.
+patient data. The standard *describes* fields a registry may collect; Hee-Lee Oss never holds them.
 
 **7.2 Source classes and their handling**
 
@@ -332,7 +332,7 @@ reviewers; M4/M5 depend on M2; M6 depends on M2–M5 + securing clinical/advocat
 ## 10. Work breakdown
 
 The itemized, schema-mapped backlog lives in **`TASKS.md`** — ~20 tasks across M0–M6, each
-expressible as an Elyos Task JSON (validated against `packages/schema/src/schemas.ts`), with size,
+expressible as a Hee-Lee Oss Task JSON (validated against `packages/schema/src/schemas.ts`), with size,
 risk tier, deliverable, dependencies, reviewer, and acceptance criteria. `TASKS.md` includes a
 complete, schema-valid example Task JSON for the first M0 task and per-milestone Definitions of
 Done. All tasks currently carry `verifiedNeed: false` (no partner yet secured).
@@ -349,7 +349,7 @@ Done. All tasks currently carry `verifiedNeed: false` (no partner yet secured).
 - **Expert reviewers (HIGH tier):** credentialed **oncologist** (pediatric/AYA sarcoma) +
   **patient advocate** for education; **ethics/IRB-literate reviewer** (+ data-protection-literate)
   for consent/governance. **TO BE SECURED** — these gate the high-tier milestones.
-- **Community/board:** edge cases, license disputes, and definition changes go through Elyos
+- **Community/board:** edge cases, license disputes, and definition changes go through Hee-Lee Oss
   governance per `good-deed-definition.md`.
 
 No artifact in a high tier ships without its named expert sign-off recorded in the review log.
@@ -360,7 +360,7 @@ No artifact in a high tier ships without its named expert sign-off recorded in t
   CDISC, REDCap, GA4GH (Phenopackets, DUO, VRS, Beacon), ICHOM, ERN/EURACAN, ICD-O-3/WHO, AJCC,
   ICCC-3, HGNC, HGVS, Sequence Ontology, LOINC, SNOMED CT.
 - **Tooling:** HL7 FHIR IG Publisher; OHDSI/OMOP validators; JSON Schema validator; Node/pnpm.
-- **Elyos pieces:** Task schema (`packages/schema`), CLI workspace conventions, CI/governance
+- **Hee-Lee Oss pieces:** Task schema (`packages/schema`), CLI workspace conventions, CI/governance
   workflows, the registry entry in `ROADMAP.md` (Track 8a).
 - **Sibling projects** (consume/feed): `ewing-open-data-catalog`, `ewsr1-fli1-knowledge-graph`,
   `ewing-outcomes-harmonization`, `rare-cancer-registry-templates` (shares governance patterns),
@@ -433,7 +433,7 @@ No artifact in a high tier ships without its named expert sign-off recorded in t
 
 ## 17. References
 
-- Elyos: `CLAUDE.md` (work rules, lanes, guardrails); `docs/good-deed-definition.md` (criteria +
+- Hee-Lee Oss: `CLAUDE.md` (work rules, lanes, guardrails); `docs/good-deed-definition.md` (criteria +
   risk tiers); `packages/schema/src/schemas.ts` (Task schema); `planning/ROADMAP.md` (Track 8a,
   cancer guardrails).
 - NIH/NCATS **GRDR** Common Data Elements; **GARD** rare-disease resources.
@@ -465,7 +465,7 @@ to the plan above (and to `TASKS.md`). Each is concrete and verifiable in the do
    no real data; license verification; not-medical-advice; provenance) so the cancer constraints
    are unmissable — and §7 leads with them as required.
 2. **Reframed "schema, not data store" as a structural guarantee** in the executive summary,
-   scope, and non-goals — Elyos never holds patient data, shrinking the threat surface (§14).
+   scope, and non-goals — Hee-Lee Oss never holds patient data, shrinking the threat surface (§14).
 3. **Made "verified need" honest:** `verifiedNeed: false` and `requestor: TO BE SECURED`
    everywhere, with securing a partner as M0's top non-engineering exit criterion (§2, §9, §11).
 4. **Added "bind, don't bundle" as a first-class rule** for terminologies, with a CI license-audit
@@ -490,7 +490,7 @@ to the plan above (and to `TASKS.md`). Each is concrete and verifiable in the do
     patient data can ever enter examples/tests (§6, §14).
 14. **Added pediatric assent + parental permission** and AYA scope to the consent framework and
     open questions — Ewing's age distribution demands it (§3, §16 Q2).
-15. **Defined "Definition of Shipped" as delivered + adopted**, not merged, per Elyos quality bar,
+15. **Defined "Definition of Shipped" as delivered + adopted**, not merged, per Hee-Lee Oss quality bar,
     including the O1 partner-pilot condition (§8).
 16. **Added an adoption kit + REDCap template** to lower the real-world adoption barrier (REDCap is
     the dominant registry tool) — directly serving O1 (§5, §6, M4/M6).
@@ -510,7 +510,7 @@ to the plan above (and to `TASKS.md`). Each is concrete and verifiable in the do
     fields, or repurpose the schema for surveillance/for-profit-primary benefit (§14).
 24. **International governance flagged** (HIPAA + GDPR) as an open question with an EU annex option,
     rather than silently assuming US-only (§16 Q7).
-25. **Linked to sibling Elyos projects** (catalog, KG, outcomes-harmonization, survivorship,
+25. **Linked to sibling Hee-Lee Oss projects** (catalog, KG, outcomes-harmonization, survivorship,
     family-guide, rare-cancer-registry-templates) for reuse and a possible shared rare-cancer core
     (§12, §16 Q8) — avoiding duplicated effort across the cancer track.
 
